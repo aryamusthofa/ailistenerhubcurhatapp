@@ -1,0 +1,994 @@
+'package:ai_curhat_app/presentation/widgets/mood_selector.dart'
+ ('lib/presentation/widgets/mood_selector.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Colors'.
+      barrierColor: Colors.transparent, // Let overlay handle blur
+                    ^^^^^^
+lib/presentation/widgets/mood_selector.dart:105:11: Error: The getter 'Navigator' isn'tdefined for the type 'MoodSelector'.
+ - 'MoodSelector' is from
+ 'package:ai_curhat_app/presentation/widgets/mood_selector.dart'
+ ('lib/presentation/widgets/mood_selector.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Navigator'.
+          Navigator.pop(context);
+          ^^^^^^^^^
+lib/presentation/widgets/mood_selector.dart:106:11: Error: The getter
+'ScaffoldMessenger' isn't defined for the type 'MoodSelector'.
+ - 'MoodSelector' is from
+ 'package:ai_curhat_app/presentation/widgets/mood_selector.dart'
+ ('lib/presentation/widgets/mood_selector.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'ScaffoldMessenger'.
+          ScaffoldMessenger.of(context).showSnackBar(
+          ^^^^^^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:15:16: Error: 'BuildContext' isn't a     
+type.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:31:27: Error: Couldn't find constructor  
+'EdgeInsets.symmetric'.
+            margin: const EdgeInsets.symmetric(horizontal: 40),
+                          ^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:32:28: Error: Couldn't find constructor  
+'EdgeInsets.all'.
+            padding: const EdgeInsets.all(24),
+                           ^^^^^^^^^^
+                                 ^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:53:37: Error: Not a constant expression. 
+                  child: const Icon(Icons.workspace_premium, size: 48, color:
+                  Colors.amber),
+                                    ^^^^^
+lib/presentation/widgets/premium_overlay.dart:53:79: Error: Not a constant expression. 
+                  child: const Icon(Icons.workspace_premium, size: 48, color:
+                  Colors.amber),
+                                                                             ^^^^^^    
+lib/presentation/widgets/premium_overlay.dart:53:32: Error: Not a constant expression. 
+                  child: const Icon(Icons.workspace_premium, size: 48, color:
+                  Colors.amber),
+                               ^^^^
+lib/presentation/widgets/premium_overlay.dart:55:23: Error: Not a constant expression. 
+                const SizedBox(height: 20),
+                      ^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:58:26: Error: Cannot invoke a non-'const'constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                         ^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:56:23: Error: Not a constant expression. 
+                const Text(
+                      ^^^^
+lib/presentation/widgets/premium_overlay.dart:60:23: Error: Not a constant expression. 
+                const SizedBox(height: 12),
+                      ^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:68:23: Error: Not a constant expression. 
+                const SizedBox(height: 24),
+                      ^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:74:36: Error: Couldn't find constructor  
+'EdgeInsets.symmetric'.
+                    padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12), 
+                                   ^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:77:68: Error: Cannot invoke a non-'const'constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+                  child: const Text('Buka Kunci (Upgrade)', style:
+                  TextStyle(fontWeight: FontWeight.bold)),
+                                                                   ^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:77:32: Error: Not a constant expression. 
+                  child: const Text('Buka Kunci (Upgrade)', style:
+                  TextStyle(fontWeight: FontWeight.bold)),
+                               ^^^^
+lib/presentation/widgets/premium_overlay.dart:81:32: Error: Not a constant expression. 
+                  child: const Text('Nanti Saja'),
+                               ^^^^
+lib/presentation/widgets/premium_overlay.dart:16:12: Error: The method 'Stack' isn't   
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Stack'.
+    return Stack(
+           ^^^^^
+lib/presentation/widgets/premium_overlay.dart:19:9: Error: The method 'BackdropFilter' 
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BackdropFilter'.
+        BackdropFilter(
+        ^^^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:21:18: Error: The method 'Container'     
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Container'.
+          child: Container(
+                 ^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:22:20: Error: The getter 'Colors' isn't  
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Colors'.
+            color: Colors.black.withOpacity(0.3),
+                   ^^^^^^
+lib/presentation/widgets/premium_overlay.dart:23:24: Error: The getter 'Alignment'     
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Alignment'.
+            alignment: Alignment.center,
+                       ^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:27:9: Error: The method 'Align' isn't    
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Align'.
+        Align(
+        ^^^^^
+lib/presentation/widgets/premium_overlay.dart:28:22: Error: The getter 'Alignment'     
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Alignment'.
+          alignment: Alignment.center,
+                     ^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:29:18: Error: The method 'Container'     
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Container'.
+          child: Container(
+                 ^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:33:25: Error: The method 'BoxDecoration' 
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BoxDecoration'.
+            decoration: BoxDecoration(
+                        ^^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:34:22: Error: The getter 'Theme' isn't   
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Theme'.
+              color: Theme.of(context).cardColor.withOpacity(0.9),
+                     ^^^^^
+lib/presentation/widgets/premium_overlay.dart:35:29: Error: The getter 'BorderRadius'  
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'BorderRadius'.
+              borderRadius: BorderRadius.circular(24),
+                            ^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:37:17: Error: The method 'BoxShadow'     
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BoxShadow'.
+                BoxShadow(
+                ^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:38:26: Error: The getter 'Colors' isn't  
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Colors'.
+                  color: Colors.black.withOpacity(0.2),
+                         ^^^^^^
+lib/presentation/widgets/premium_overlay.dart:44:20: Error: The method 'Column' isn't  
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Column'.
+            child: Column(
+                   ^^^^^^
+lib/presentation/widgets/premium_overlay.dart:45:29: Error: The getter 'MainAxisSize'  
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'MainAxisSize'.
+              mainAxisSize: MainAxisSize.min,
+                            ^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:47:17: Error: The method 'Container'     
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Container'.
+                Container(
+                ^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:49:31: Error: The method 'BoxDecoration' 
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BoxDecoration'.
+                  decoration: BoxDecoration(
+                              ^^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:50:28: Error: The getter 'Colors' isn't  
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Colors'.
+                    color: Colors.amber.withOpacity(0.2),
+                           ^^^^^^
+lib/presentation/widgets/premium_overlay.dart:51:28: Error: The getter 'BoxShape' isn'tdefined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'BoxShape'.
+                    shape: BoxShape.circle,
+                           ^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:61:17: Error: The method 'Text' isn't    
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Text'.
+                Text(
+                ^^^^
+lib/presentation/widgets/premium_overlay.dart:64:26: Error: The getter 'Theme' isn't   
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Theme'.
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                         ^^^^^
+lib/presentation/widgets/premium_overlay.dart:65:28: Error: The getter 'Theme' isn't   
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Theme'.
+                    color:
+                    Theme.of(context).textTheme.bodyMedium?.color?.withOpacity(0.8),   
+                           ^^^^^
+lib/presentation/widgets/premium_overlay.dart:69:17: Error: The method 'ElevatedButton'isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'ElevatedButton'.
+                ElevatedButton(
+                ^^^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:71:26: Error: The getter 'ElevatedButton'isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'ElevatedButton'.
+                  style: ElevatedButton.styleFrom(
+                         ^^^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:72:38: Error: The getter 'Colors' isn't  
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Colors'.
+                    backgroundColor: Colors.amber, // Premium color
+                                     ^^^^^^
+lib/presentation/widgets/premium_overlay.dart:73:38: Error: The getter 'Colors' isn't  
+defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Colors'.
+                    foregroundColor: Colors.black87,
+                                     ^^^^^^
+lib/presentation/widgets/premium_overlay.dart:75:28: Error: The method
+'RoundedRectangleBorder' isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'RoundedRectangleBorder'.
+                    shape: RoundedRectangleBorder(borderRadius:
+                    BorderRadius.circular(30)),
+                           ^^^^^^^^^^^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:75:65: Error: The getter 'BorderRadius'  
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'BorderRadius'.
+                    shape: RoundedRectangleBorder(borderRadius:
+                    BorderRadius.circular(30)),
+                                                                ^^^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:79:17: Error: The method 'TextButton'    
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'TextButton'.
+                TextButton(
+                ^^^^^^^^^^
+lib/presentation/widgets/premium_overlay.dart:80:36: Error: The getter 'Navigator'     
+isn't defined for the type 'PremiumOverlay'.
+ - 'PremiumOverlay' is from
+ 'package:ai_curhat_app/presentation/widgets/premium_overlay.dart'
+ ('lib/presentation/widgets/premium_overlay.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Navigator'.
+                  onPressed: () => Navigator.pop(context),
+                ^^^^^^^^^
+lib/presentation/providers/chat_provider.dart:39:9: Error: The getter 'state' isn't    
+defined for the type 'ChatNotifier'.
+ - 'ChatNotifier' is from
+ 'package:ai_curhat_app/presentation/providers/chat_provider.dart'
+ ('lib/presentation/providers/chat_provider.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'state'.
+    if (state.isSending) return;
+        ^^^^^
+lib/presentation/providers/chat_provider.dart:41:13: Error: The getter 'state' isn't   
+defined for the type 'ChatNotifier'.
+ - 'ChatNotifier' is from
+ 'package:ai_curhat_app/presentation/providers/chat_provider.dart'
+ ('lib/presentation/providers/chat_provider.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'state'.
+    state = state.copyWith(isSending: true, errorMessage: null);
+            ^^^^^
+lib/presentation/providers/chat_provider.dart:41:5: Error: The setter 'state' isn't    
+defined for the type 'ChatNotifier'.
+ - 'ChatNotifier' is from
+ 'package:ai_curhat_app/presentation/providers/chat_provider.dart'
+ ('lib/presentation/providers/chat_provider.dart').
+Try correcting the name to the name of an existing setter, or defining a setter or     
+field named 'state'.
+    state = state.copyWith(isSending: true, errorMessage: null);
+    ^^^^^
+lib/presentation/providers/chat_provider.dart:46:15: Error: The getter 'state' isn't   
+defined for the type 'ChatNotifier'.
+ - 'ChatNotifier' is from
+ 'package:ai_curhat_app/presentation/providers/chat_provider.dart'
+ ('lib/presentation/providers/chat_provider.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'state'.
+      state = state.copyWith(errorMessage: e.toString());
+              ^^^^^
+lib/presentation/providers/chat_provider.dart:46:7: Error: The setter 'state' isn't    
+defined for the type 'ChatNotifier'.
+ - 'ChatNotifier' is from
+ 'package:ai_curhat_app/presentation/providers/chat_provider.dart'
+ ('lib/presentation/providers/chat_provider.dart').
+Try correcting the name to the name of an existing setter, or defining a setter or     
+field named 'state'.
+      state = state.copyWith(errorMessage: e.toString());
+      ^^^^^
+lib/presentation/providers/chat_provider.dart:48:15: Error: The getter 'state' isn't   
+defined for the type 'ChatNotifier'.
+ - 'ChatNotifier' is from
+ 'package:ai_curhat_app/presentation/providers/chat_provider.dart'
+ ('lib/presentation/providers/chat_provider.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'state'.
+      state = state.copyWith(isSending: false);
+              ^^^^^
+lib/presentation/providers/chat_provider.dart:48:7: Error: The setter 'state' isn't    
+defined for the type 'ChatNotifier'.
+ - 'ChatNotifier' is from
+ 'package:ai_curhat_app/presentation/providers/chat_provider.dart'
+ ('lib/presentation/providers/chat_provider.dart').
+Try correcting the name to the name of an existing setter, or defining a setter or     
+field named 'state'.
+      state = state.copyWith(isSending: false);
+      ^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:12:16: Error: 'BuildContext' isn't a    
+type.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:20:23: Error: Couldn't find constructor 
+'EdgeInsets.symmetric'.
+        margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                      ^^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:21:24: Error: Couldn't find constructor 
+'EdgeInsets.all'.
+        padding: const EdgeInsets.all(12),
+                       ^^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:28:28: Error: Couldn't find constructor 
+'Radius.circular'.
+            topLeft: const Radius.circular(16),
+                           ^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:29:29: Error: Couldn't find constructor 
+'Radius.circular'.
+            topRight: const Radius.circular(16),
+                            ^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:30:40: Error: Couldn't find constructor 
+'Radius.circular'.
+            bottomLeft: isUser ? const Radius.circular(16) : const Radius.circular(2), 
+                                       ^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:30:68: Error: Couldn't find constructor 
+'Radius.circular'.
+            bottomLeft: isUser ? const Radius.circular(16) : const Radius.circular(2),
+                                                                   ^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:31:41: Error: Couldn't find constructor 
+'Radius.circular'.
+            bottomRight: isUser ? const Radius.circular(2) : const Radius.circular(16),                                        ^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:31:68: Error: Couldn't find constructor 
+'Radius.circular'.
+            bottomRight: isUser ? const Radius.circular(2) : const Radius.circular(16),                                                                   ^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:38:31: Error: Not a constant expression.                offset: const Offset(0, 2),
+                              ^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:14:19: Error: The getter 'Theme' isn't  
+defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Theme'.
+    final theme = Theme.of(context);
+                  ^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:17:12: Error: The method 'Align' isn't  
+defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Align'.
+    return Align(
+           ^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:18:27: Error: The getter 'Alignment'    
+isn't defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Alignment'.
+      alignment: isUser ? Alignment.centerRight : Alignment.centerLeft,
+                          ^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:18:51: Error: The getter 'Alignment'    
+isn't defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Alignment'.
+      alignment: isUser ? Alignment.centerRight : Alignment.centerLeft,
+                                                  ^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:19:14: Error: The method 'Container'    
+isn't defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Container'.
+      child: Container(
+             ^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:22:22: Error: The method
+'BoxConstraints' isn't defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BoxConstraints'.
+        constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width *      
+        0.75),
+                     ^^^^^^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:22:47: Error: The getter 'MediaQuery'   
+isn't defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'MediaQuery'.
+        constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width *      
+        0.75),
+                                              ^^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:23:21: Error: The method 'BoxDecoration'isn't defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BoxDecoration'.
+        decoration: BoxDecoration(
+                    ^^^^^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:26:17: Error: The getter 'Colors' isn't 
+defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Colors'.
+              : Colors.white,
+                ^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:27:25: Error: The getter 'BorderRadius' 
+isn't defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or
+field named 'BorderRadius'.
+          borderRadius: BorderRadius.only(
+                        ^^^^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:35:15: Error: The method 'BoxShadow'    
+isn't defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BoxShadow'.
+              BoxShadow(
+              ^^^^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:36:24: Error: The getter 'Colors' isn't 
+defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Colors'.
+                color: Colors.black.withOpacity(0.05),
+                       ^^^^^^
+lib/presentation/widgets/chat/chat_bubble.dart:42:16: Error: The method 'Text' isn't   
+defined for the type 'ChatBubble'.
+ - 'ChatBubble' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/chat_bubble.dart'
+ ('lib/presentation/widgets/chat/chat_bubble.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Text'.
+        child: Text(
+               ^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:9:16: Error: 'BuildContext' isn't atype.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:13:23: Error: Couldn't find        
+constructor 'EdgeInsets.symmetric'.
+        margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                      ^^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:14:24: Error: Couldn't find        
+constructor 'EdgeInsets.all'.
+        padding: const EdgeInsets.all(12),
+                       ^^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:16:18: Error: Not a constant       
+expression.
+          color: Colors.white,
+                 ^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:18:22: Error: Not a constant       
+expression.
+            topLeft: Radius.circular(16),
+                     ^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:18:29: Error: Method invocation is 
+not a constant expression.
+            topLeft: Radius.circular(16),
+                            ^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:19:23: Error: Not a constant       
+expression.
+            topRight: Radius.circular(16),
+                      ^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:19:30: Error: Method invocation is 
+not a constant expression.
+            topRight: Radius.circular(16),
+                             ^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:20:25: Error: Not a constant       
+expression.
+            bottomLeft: Radius.circular(2),
+                        ^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:20:32: Error: Method invocation is 
+not a constant expression.
+            bottomLeft: Radius.circular(2),
+                               ^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:21:26: Error: Not a constant       
+expression.
+            bottomRight: Radius.circular(16),
+                         ^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:21:33: Error: Method invocation is 
+not a constant expression.
+            bottomRight: Radius.circular(16),
+                                ^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:17:25: Error: Not a constant       
+expression.
+          borderRadius: BorderRadius.only(
+                        ^^^^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:17:38: Error: Method invocation is 
+not a constant expression.
+          borderRadius: BorderRadius.only(
+                                     ^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:15:27: Error: Not a constant       
+expression.
+        decoration: const BoxDecoration(
+                          ^^^^^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:28:19: Error: Not a constant       
+expression.
+            const SizedBox(width: 4),
+                  ^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:30:19: Error: Not a constant       
+expression.
+            const SizedBox(width: 4),
+                  ^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:10:12: Error: The method 'Align'   
+isn't defined for the type 'TypingIndicator'.
+ - 'TypingIndicator' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/typing_indicator.dart'
+ ('lib/presentation/widgets/chat/typing_indicator.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Align'.
+    return Align(
+           ^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:11:18: Error: The getter
+'Alignment' isn't defined for the type 'TypingIndicator'.
+ - 'TypingIndicator' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/typing_indicator.dart'
+ ('lib/presentation/widgets/chat/typing_indicator.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Alignment'.
+      alignment: Alignment.centerLeft,
+                 ^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:12:14: Error: The method
+'Container' isn't defined for the type 'TypingIndicator'.
+ - 'TypingIndicator' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/typing_indicator.dart'
+ ('lib/presentation/widgets/chat/typing_indicator.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Container'.
+      child: Container(
+             ^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:24:16: Error: The method 'Row'     
+isn't defined for the type 'TypingIndicator'.
+ - 'TypingIndicator' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/typing_indicator.dart'
+ ('lib/presentation/widgets/chat/typing_indicator.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Row'.
+        child: Row(
+               ^^^
+lib/presentation/widgets/chat/typing_indicator.dart:25:25: Error: The getter
+'MainAxisSize' isn't defined for the type 'TypingIndicator'.
+ - 'TypingIndicator' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/typing_indicator.dart'
+ ('lib/presentation/widgets/chat/typing_indicator.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'MainAxisSize'.
+          mainAxisSize: MainAxisSize.min,
+                        ^^^^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:29:29: Error: The getter 'ms' isn'tdefined for the type 'int'.
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'ms'.
+            _Dot(delay: 200.ms),
+                            ^^
+lib/presentation/widgets/chat/typing_indicator.dart:31:29: Error: The getter 'ms' isn'tdefined for the type 'int'.
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'ms'.
+            _Dot(delay: 400.ms),
+                            ^^
+lib/presentation/widgets/chat/typing_indicator.dart:45:16: Error: 'BuildContext' isn't 
+a type.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:54:58: Error: Not a constant       
+expression.
+     .scale(duration: 600.ms, delay: delay, begin: const Offset(0.8, 0.8), end: const  
+     Offset(1.2, 1.2))
+                                                         ^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:54:87: Error: Not a constant
+expression.
+     .scale(duration: 600.ms, delay: delay, begin: const Offset(0.8, 0.8), end: const  
+     Offset(1.2, 1.2))
+                                                                             ^^^^^^    
+lib/presentation/widgets/chat/typing_indicator.dart:46:12: Error: The method
+'Container' isn't defined for the type '_Dot'.
+ - '_Dot' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/typing_indicator.dart'
+ ('lib/presentation/widgets/chat/typing_indicator.dart').
+Try correcting the name to the name of an existing method, or defining a method named
+'Container'.
+    return Container(
+           ^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:49:19: Error: The method
+'BoxDecoration' isn't defined for the type '_Dot'.
+ - '_Dot' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/typing_indicator.dart'
+ ('lib/presentation/widgets/chat/typing_indicator.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BoxDecoration'.
+      decoration: BoxDecoration(
+                  ^^^^^^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:50:16: Error: The getter 'Theme'   
+isn't defined for the type '_Dot'.
+ - '_Dot' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/typing_indicator.dart'
+ ('lib/presentation/widgets/chat/typing_indicator.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Theme'.
+        color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
+               ^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:51:16: Error: The getter 'BoxShape'isn't defined for the type '_Dot'.
+ - '_Dot' is from
+ 'package:ai_curhat_app/presentation/widgets/chat/typing_indicator.dart'
+ ('lib/presentation/widgets/chat/typing_indicator.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'BoxShape'.
+        shape: BoxShape.circle,
+               ^^^^^^^^
+lib/presentation/widgets/chat/typing_indicator.dart:54:27: Error: The getter 'ms' isn'tdefined for the type 'int'.
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'ms'.
+     .scale(duration: 600.ms, delay: delay, begin: const Offset(0.8, 0.8), end: const  
+     Offset(1.2, 1.2))
+                          ^^
+lib/presentation/widgets/chat/typing_indicator.dart:55:26: Error: The getter 'ms' isn'tdefined for the type 'int'.
+Try correcting the name to the name of an existing getter, or defining a getter or
+field named 'ms'.
+     .fade(duration: 600.ms, delay: delay, begin: 0.5, end: 1.0);
+                         ^^
+lib/presentation/widgets/fx/aurora_background.dart:7:9: Error: 'Widget' isn't a type.  
+  final Widget child;
+        ^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:12:16: Error: 'BuildContext' isn't atype.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:30:28: Error: Not a constant        
+expression.
+              color: const Color(0xFF8FA395).withOpacity(0.4),
+                           ^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:33:53: Error: Not a constant        
+expression.
+           .scale(duration: 4.seconds, begin: const Offset(1, 1), end: const
+           Offset(1.2, 1.2))
+                                                    ^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:33:78: Error: Not a constant        
+expression.
+           .scale(duration: 4.seconds, begin: const Offset(1, 1), end: const
+           Offset(1.2, 1.2))
+                                                                             ^^^^^^    
+lib/presentation/widgets/fx/aurora_background.dart:34:52: Error: Not a constant        
+expression.
+           .move(duration: 5.seconds, begin: const Offset(0, 0), end: const Offset(20, 
+           20)),
+                                                   ^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:34:77: Error: Not a constant        
+expression.
+           .move(duration: 5.seconds, begin: const Offset(0, 0), end: const Offset(20, 
+           20)),
+                                                                            ^^^^^^     
+lib/presentation/widgets/fx/aurora_background.dart:46:28: Error: Not a constant        
+expression.
+              color: const Color(0xFFDCD6F7).withOpacity(0.4),
+                           ^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:49:53: Error: Not a constant        
+expression.
+           .scale(duration: 6.seconds, begin: const Offset(1, 1), end: const
+           Offset(1.3, 1.3))
+                                                    ^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:49:78: Error: Not a constant        
+expression.
+           .scale(duration: 6.seconds, begin: const Offset(1, 1), end: const
+           Offset(1.3, 1.3))
+                                                                             ^^^^^^    
+lib/presentation/widgets/fx/aurora_background.dart:50:52: Error: Not a constant        
+expression.
+           .move(duration: 7.seconds, begin: const Offset(0, 0), end: const Offset(-30,           -30)),
+                                                   ^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:50:77: Error: Not a constant        
+expression.
+           .move(duration: 7.seconds, begin: const Offset(0, 0), end: const Offset(-30,           -30)),
+                                                                            ^^^^^^     
+lib/presentation/widgets/fx/aurora_background.dart:56:44: Error: Not a constant        
+expression.
+            filter: const ColorFilter.mode(Colors.transparent, BlendMode.srcOver), //  
+            No-op, just structure
+                                           ^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:56:64: Error: Not a constant        
+expression.
+            filter: const ColorFilter.mode(Colors.transparent, BlendMode.srcOver), //  
+            No-op, just structure
+                                                               ^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:56:27: Error: Couldn't find
+constructor 'ColorFilter.mode'.
+            filter: const ColorFilter.mode(Colors.transparent, BlendMode.srcOver), //  
+            No-op, just structure
+                          ^^^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:16:12: Error: The method 'Stack'    
+isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Stack'.
+    return Stack(
+           ^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:19:9: Error: The method 'Container' 
+isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Container'.
+        Container(color: Theme.of(context).scaffoldBackgroundColor),
+        ^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:19:26: Error: The getter 'Theme'    
+isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Theme'.
+        Container(color: Theme.of(context).scaffoldBackgroundColor),
+                         ^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:22:9: Error: The method 'Positioned'isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Positioned'.
+        Positioned(
+        ^^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:25:18: Error: The method 'Container'isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+'Container'.
+          child: Container(
+                 ^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:28:25: Error: The method
+'BoxDecoration' isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BoxDecoration'.
+            decoration: BoxDecoration(
+                        ^^^^^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:29:22: Error: The getter 'BoxShape' 
+isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'BoxShape'.
+              shape: BoxShape.circle,
+                     ^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:33:31: Error: The getter 'seconds'  
+isn't defined for the type 'int'.
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'seconds'.
+           .scale(duration: 4.seconds, begin: const Offset(1, 1), end: const
+           Offset(1.2, 1.2))
+                              ^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:34:30: Error: The getter 'seconds'  
+isn't defined for the type 'int'.
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'seconds'.
+           .move(duration: 5.seconds, begin: const Offset(0, 0), end: const Offset(20, 
+           20)),
+                             ^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:38:9: Error: The method 'Positioned'isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Positioned'.
+        Positioned(
+        ^^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:41:18: Error: The method 'Container'isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Container'.
+          child: Container(
+                 ^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:44:25: Error: The method
+'BoxDecoration' isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BoxDecoration'.
+            decoration: BoxDecoration(
+                        ^^^^^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:45:22: Error: The getter 'BoxShape' 
+isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'BoxShape'.
+              shape: BoxShape.circle,
+                     ^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:49:31: Error: The getter 'seconds'  
+isn't defined for the type 'int'.
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'seconds'.
+           .scale(duration: 6.seconds, begin: const Offset(1, 1), end: const
+           Offset(1.3, 1.3))
+                              ^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:50:30: Error: The getter 'seconds'  
+isn't defined for the type 'int'.
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'seconds'.
+           .move(duration: 7.seconds, begin: const Offset(0, 0), end: const Offset(-30,           -30)),
+                             ^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:54:9: Error: The getter 'Positioned'isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Positioned'.
+        Positioned.fill(
+        ^^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:55:18: Error: The method
+'BackdropFilter' isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'BackdropFilter'.
+          child: BackdropFilter(
+                 ^^^^^^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:57:20: Error: The method 'Container'isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing method, or defining a method named  
+'Container'.
+            child: Container(color: Colors.white.withOpacity(0.01)), // Hint
+                   ^^^^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:57:37: Error: The getter 'Colors'   
+isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Colors'.
+            child: Container(color: Colors.white.withOpacity(0.01)), // Hint
+                                    ^^^^^^
+lib/presentation/widgets/fx/aurora_background.dart:62:9: Error: The getter 'Positioned'isn't defined for the type 'AuroraBackground'.
+ - 'AuroraBackground' is from
+ 'package:ai_curhat_app/presentation/widgets/fx/aurora_background.dart'
+ ('lib/presentation/widgets/fx/aurora_background.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or     
+field named 'Positioned'.
+        Positioned.fill(child: child),
+        ^^^^^^^^^^
+lib/data/models/chat_message_model.g.dart:14:25: Error: 'BinaryReader' isn't a type.   
+  ChatMessageModel read(BinaryReader reader) {
+                        ^^^^^^^^^^^^
+lib/data/models/chat_message_model.g.dart:29:14: Error: 'BinaryWriter' isn't a type.   
+  void write(BinaryWriter writer, ChatMessageModel obj) {
+             ^^^^^^^^^^^^
+lib/data/models/mood_entry_model.g.dart:14:23: Error: 'BinaryReader' isn't a type.     
+  MoodEntryModel read(BinaryReader reader) {
+                      ^^^^^^^^^^^^
+lib/data/models/mood_entry_model.g.dart:28:14: Error: 'BinaryWriter' isn't a type.     
+  void write(BinaryWriter writer, MoodEntryModel obj) {
+             ^^^^^^^^^^^^
+lib/presentation/widgets/fx/ui_constants.dart:7:16: Error: 'BorderRadius' isn't a type.  static const BorderRadius glassBorderRadius = BorderRadius.all(Radius.circular(16)); 
+               ^^^^^^^^^^^^
+Performing hot restart...                                               
+Restarted application in 15,327ms.
+Try again after fixing the above error(s).

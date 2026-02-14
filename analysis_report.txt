@@ -1,0 +1,62 @@
+Analyzing lib...                                                
+
+warning - The value of the field '_glassWhite' isn't used - lib\core\theme\app_theme.dart:13:22 - unused_field
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\glass_container.dart:35:61 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\glass_container.dart:42:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\glass_container.dart:43:56 - deprecated_member_use
+   info - The constant name 'CACHED_CHAT_HISTORY' isn't a lowerCamelCase identifier - lib\data\datasources\chat_local_data_source.dart:11:7 - constant_identifier_names
+warning - Unused import: 'package:flutter/foundation.dart' - lib\data\datasources\chat_remote_data_source.dart:1:8 - unused_import
+warning - Unused import: '../../domain/entities/chat_message.dart' - lib\data\datasources\chat_remote_data_source.dart:3:8 - unused_import
+   info - The constant name 'CACHED_THEME_MODE' isn't a lowerCamelCase identifier - lib\data\datasources\settings_local_data_source.dart:10:7 - constant_identifier_names
+   info - Field overrides a field inherited from 'ChatMessage' - lib\data\models\chat_message_model.dart:10:16 - overridden_fields
+   info - The member 'id' overrides an inherited member but isn't annotated with '@override' - lib\data\models\chat_message_model.dart:10:16 - annotate_overrides
+   info - Field overrides a field inherited from 'ChatMessage' - lib\data\models\chat_message_model.dart:12:16 - overridden_fields
+   info - The member 'content' overrides an inherited member but isn't annotated with '@override' - lib\data\models\chat_message_model.dart:12:16 - annotate_overrides
+   info - Field overrides a field inherited from 'ChatMessage' - lib\data\models\chat_message_model.dart:14:14 - overridden_fields
+   info - The member 'isUser' overrides an inherited member but isn't annotated with '@override' - lib\data\models\chat_message_model.dart:14:14 - annotate_overrides
+   info - Field overrides a field inherited from 'ChatMessage' - lib\data\models\chat_message_model.dart:16:18 - overridden_fields
+   info - The member 'timestamp' overrides an inherited member but isn't annotated with '@override' - lib\data\models\chat_message_model.dart:16:18 - annotate_overrides
+   info - Field overrides a field inherited from 'ChatMessage' - lib\data\models\chat_message_model.dart:18:14 - overridden_fields
+   info - The member 'isEncrypted' overrides an inherited member but isn't annotated with '@override' - lib\data\models\chat_message_model.dart:18:14 - annotate_overrides
+   info - Field overrides a field inherited from 'MoodEntry' - lib\data\models\mood_entry_model.dart:10:16 - overridden_fields
+   info - The member 'id' overrides an inherited member but isn't annotated with '@override' - lib\data\models\mood_entry_model.dart:10:16 - annotate_overrides
+   info - Field overrides a field inherited from 'MoodEntry' - lib\data\models\mood_entry_model.dart:12:18 - overridden_fields
+   info - The member 'timestamp' overrides an inherited member but isn't annotated with '@override' - lib\data\models\mood_entry_model.dart:12:18 - annotate_overrides
+   info - Field overrides a field inherited from 'MoodEntry' - lib\data\models\mood_entry_model.dart:16:17 - overridden_fields
+   info - The member 'note' overrides an inherited member but isn't annotated with '@override' - lib\data\models\mood_entry_model.dart:16:17 - annotate_overrides
+warning - The value of the local variable 'appThemeMode' isn't used - lib\features\home\presentation\screens\home_screen.dart:84:11 - unused_local_variable
+warning - The value of the local variable 'isPremium' isn't used - lib\features\home\presentation\screens\home_screen.dart:86:11 - unused_local_variable
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\presentation\screens\home_screen.dart:106:71 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\presentation\screens\home_screen.dart:146:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\presentation\screens\home_screen.dart:228:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\presentation\screens\home_screen.dart:331:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\home\presentation\screens\home_screen.dart:331:81 - deprecated_member_use
+warning - Unused import: 'package:flutter_dotenv/flutter_dotenv.dart' - lib\main.dart:3:8 - unused_import
+  error - The method 'getThemeData' isn't defined for the type 'AppTheme' - lib\main.dart:40:23 - undefined_method
+  error - The method 'getThemeData' isn't defined for the type 'AppTheme' - lib\main.dart:41:27 - undefined_method
+  error - The method 'getThemeMode' isn't defined for the type 'AppTheme' - lib\main.dart:42:27 - undefined_method
+warning - Unused import: 'package:flutter/material.dart' - lib\presentation\providers\theme\theme_provider.dart:2:8 - unused_import
+   info - The import of 'package:flutter/services.dart' is unnecessary because all of the used elements are also provided by the import of 'dart:ui' - lib\presentation\screens\auth\biometric_gate.dart:4:8 - unnecessary_import
+warning - Duplicate import - lib\presentation\screens\auth\biometric_gate.dart:6:8 - duplicate_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\auth\biometric_gate.dart:111:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\settings_screen.dart:110:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\settings_screen.dart:181:89 - deprecated_member_use
+warning - Duplicate import - lib\presentation\widgets\chat\chat_bubble.dart:4:8 - duplicate_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\chat\chat_bubble.dart:36:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\chat\typing_indicator.dart:50:54 - deprecated_member_use
+warning - Duplicate import - lib\presentation\widgets\fx\aurora_background.dart:4:8 - duplicate_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\fx\aurora_background.dart:30:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\fx\aurora_background.dart:46:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\fx\aurora_background.dart:57:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\fx\glass_container.dart:39:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\fx\glass_container.dart:44:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\fx\glass_container.dart:56:44 - deprecated_member_use
+warning - Unused import: '../../domain/entities/mood_entry.dart' - lib\presentation\widgets\mood_selector.dart:4:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\mood_selector.dart:62:66 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\mood_selector.dart:67:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\premium_overlay.dart:22:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\premium_overlay.dart:34:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\premium_overlay.dart:38:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\premium_overlay.dart:50:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\premium_overlay.dart:65:75 - deprecated_member_use
+

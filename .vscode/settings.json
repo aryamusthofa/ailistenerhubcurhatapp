@@ -1,0 +1,15 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "tee": true
+    },
+    "chat.tools.edits.autoApprove": {
+        "**/.vscode/*.json": true,
+        "**/*.{code-workspace,csproj,fsproj,vbproj,vcxproj,proj,targets,props}": true,
+        "**/{package.json,package-lock.json,server.xml,build.rs,web.config,.gitattributes,.env}": true,
+        "ai_curhat_app/*": true,
+        "**/.git/**": true
+    },
+    "github.copilot.chat.githubMcpServer.readonly": true,
+    "chat.mcp.assisted.nuget.enabled": true,
+    "github.copilot.chat.githubMcpServer.lockdown": true
+}
