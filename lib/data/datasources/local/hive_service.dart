@@ -4,6 +4,7 @@ import 'package:ai_curhat_app/core/security/encryption_service.dart';
 import 'package:ai_curhat_app/core/utils/box_names.dart';
 import 'package:ai_curhat_app/data/models/chat_message_model.dart';
 import 'package:ai_curhat_app/data/models/mood_entry_model.dart';
+import 'package:ai_curhat_app/data/models/conversation_model.dart';
 
 class HiveService {
   final EncryptionService _encryptionService;
@@ -19,6 +20,7 @@ class HiveService {
     // Register Adapters
     Hive.registerAdapter(ChatMessageModelAdapter());
     Hive.registerAdapter(MoodEntryModelAdapter());
+    Hive.registerAdapter(ConversationModelAdapter());
 
     // Get Encryption Key
     final encryptionKey = await _encryptionService.getEncryptionKey();

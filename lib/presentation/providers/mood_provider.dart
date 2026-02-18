@@ -1,11 +1,14 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../domain/entities/mood_entry.dart';
-import '../../domain/entities/ai_vibe.dart';
-import 'di_providers.dart';
+import 'package:ai_curhat_app/presentation/widgets/mood_selector.dart'; // Import VibeMode enum
 
-final vibeProvider = StateProvider<AiVibe>((ref) => AiVibe.empathetic);
+class MoodNotifier extends StateNotifier<VibeMode> {
+  MoodNotifier() : super(VibeMode.empathetic);
 
-final moodHistoryProvider = FutureProvider<List<MoodEntry>>((ref) async {
-  final repository = ref.watch(moodRepositoryProvider);
-  return repository.getMoodHistory();
+  void setMood(VibeMode mood) {
+    state = mood;
+  }
+}
+
+final moodProvider = StateNotifierProvider<MoodNotifier, VibeMode>((ref) {
+  return MoodNotifier();
 });

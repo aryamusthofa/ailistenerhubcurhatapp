@@ -78,14 +78,26 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // Sidebar Toggle
-                      IconButton(
-                        icon: Icon(
-                          Icons.menu,
-                          color: theme.colorScheme.primary,
-                        ),
-                        onPressed: () => _scaffoldKey.currentState?.openDrawer(),
-                        tooltip: 'Riwayat Percakapan',
+                      // Navigation & Sidebar
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          IconButton(
+                            icon: const Icon(Icons.arrow_back),
+                            onPressed: () => context.go('/home'),
+                            tooltip: 'Kembali ke Beranda',
+                            color: theme.colorScheme.primary,
+                          ),
+                          IconButton(
+                            icon: Icon(
+                              Icons.menu,
+                              color: theme.colorScheme.primary,
+                            ),
+                            onPressed: () =>
+                                _scaffoldKey.currentState?.openDrawer(),
+                            tooltip: 'Riwayat Percakapan',
+                          ),
+                        ],
                       ),
                       // Title
                       Text(

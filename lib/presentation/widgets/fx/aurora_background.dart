@@ -1,40 +1,47 @@
-
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import '../../providers/theme/theme_provider.dart';
+import 'rgb_animated_background.dart';
 
-class AuroraBackground extends StatelessWidget {
+class AuroraBackground extends ConsumerWidget {
   final Widget child;
 
   const AuroraBackground({super.key, required this.child});
 
   @override
-  Widget build(BuildContext context) {
-    // A simplified Aurora effect using animated gradients or shapes
-    // For MVP/V2, we'll use a stack of blurred, moving circles + glass overlay
-    
+  Widget build(BuildContext context, WidgetRef ref) {
+    final themeMode = ref.watch(themeProvider);
+    final theme = Theme.of(context);
+
+    if (themeMode == AppThemeMode.rgb) {
+      return RGBAnimatedBackground(child: child);
+    }
+
     return Stack(
       children: [
-        // Base Background
-        Container(color: Theme.of(context).scaffoldBackgroundColor),
+        // Base Background Color
+        Container(color: theme.scaffoldBackgroundColor),
 
-        // Aurora Blob 1 (Top Left - Sage/Green)
+        // Aurora Blob 1 (Top Left)
         Positioned(
           top: -100,
-          left: -50,
+          left: -100,
           child: Container(
             width: 300,
             height: 300,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: const Color(0xFF8FA395).withValues(alpha: 0.4),
+              color: theme.colorScheme.primary.withValues(alpha: 0.4),
             ),
-          ).animate(onPlay: (controller) => controller.repeat(reverse: true))
-           .scale(duration: 4.seconds, begin: const Offset(1, 1), end: const Offset(1.2, 1.2))
-           .move(duration: 5.seconds, begin: const Offset(0, 0), end: const Offset(20, 20)),
+          )
+          .animate(onPlay: (controller) => controller.repeat(reverse: true))
+          .scale(duration: 4.seconds, begin: const Offset(1, 1), end: const Offset(1.2, 1.2))
+          .move(duration: 5.seconds, begin: const Offset(0, 0), end: const Offset(20, 20)),
         ),
 
-        // Aurora Blob 2 (Bottom Right - Lavender)
+        // Aurora Blob 2 (Bottom Right)
         Positioned(
           bottom: -50,
           right: -50,
@@ -43,22 +50,23 @@ class AuroraBackground extends StatelessWidget {
             height: 350,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: const Color(0xFFDCD6F7).withValues(alpha: 0.4),
+              color: theme.colorScheme.secondary.withValues(alpha: 0.4),
             ),
-          ).animate(onPlay: (controller) => controller.repeat(reverse: true))
-           .scale(duration: 6.seconds, begin: const Offset(1, 1), end: const Offset(1.3, 1.3))
-           .move(duration: 7.seconds, begin: const Offset(0, 0), end: const Offset(-30, -30)),
+          )
+          .animate(onPlay: (controller) => controller.repeat(reverse: true))
+          .scale(duration: 6.seconds, begin: const Offset(1, 1), end: const Offset(1.3, 1.3))
+          .move(duration: 7.seconds, begin: const Offset(0, 0), end: const Offset(-30, -30)),
         ),
 
-        // Backdrop Blur for the whole scene (creates the diffusion)
+        // Blur Filter (Glassmorphism effect)
         Positioned.fill(
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+            filter: ImageFilter.blur(sigmaX: 60, sigmaY: 60), // Heavy blur for aurora effect
             child: Container(color: Colors.white.withValues(alpha: 0.01)), // Hint
           ),
         ),
 
-        // Main Content on top
+        // Content
         Positioned.fill(child: child),
       ],
     );

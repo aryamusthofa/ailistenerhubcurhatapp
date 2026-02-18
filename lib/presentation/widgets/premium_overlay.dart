@@ -1,33 +1,32 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 class PremiumOverlay extends StatelessWidget {
-  final VoidCallback onUpgrade;
-  final String message;
+  final String? message;
+  final VoidCallback? onUpgrade;
 
   const PremiumOverlay({
-    super.key, 
-    required this.onUpgrade,
-    this.message = 'Konten Premium Terkunci',
+    super.key,
+    this.message,
+    this.onUpgrade,
   });
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Glassmorphism Backdrop
+        // Blur Effect
         BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
+          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
           child: Container(
             color: Colors.black.withValues(alpha: 0.3),
             alignment: Alignment.center,
           ),
         ),
-        // Overlay Content
+        // Modal Content
         Align(
           alignment: Alignment.center,
           child: Container(
-            width: double.infinity,
             margin: const EdgeInsets.symmetric(horizontal: 40),
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
@@ -36,8 +35,8 @@ class PremiumOverlay extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withValues(alpha: 0.2),
-                  blurRadius: 20,
-                  offset: const Offset(0, 10),
+                  blurRadius: 10,
+                  offset: const Offset(0, 4),
                 ),
               ],
             ),
@@ -59,7 +58,7 @@ class PremiumOverlay extends StatelessWidget {
                 ),
                 const SizedBox(height: 12),
                 Text(
-                  message,
+                  message ?? 'Mode ini khusus untuk pengguna Premium. Upgrade sekarang untuk akses penuh!',
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Theme.of(context).textTheme.bodyMedium?.color?.withValues(alpha: 0.8),
@@ -67,7 +66,9 @@ class PremiumOverlay extends StatelessWidget {
                 ),
                 const SizedBox(height: 24),
                 ElevatedButton(
-                  onPressed: onUpgrade,
+                  onPressed: onUpgrade ?? () {
+                    // Navigate to payment or show ad logic
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.amber, // Premium color
                     foregroundColor: Colors.black87,

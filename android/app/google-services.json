@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "99749817036",
+    "project_id": "appcurhatai",
+    "storage_bucket": "appcurhatai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99749817036:android:30914203839eba9f08b069",
+        "android_client_info": {
+          "package_name": "com.example.ai_curhat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_WUFVeS4rKlyjoWiX0VZ6rJA0nxg8fZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

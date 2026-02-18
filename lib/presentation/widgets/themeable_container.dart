@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/theme/theme_provider.dart';
+import 'fx/rgb_animated_background.dart';
 
 /// ThemeableContainer — Container yang berubah background warna sesuai theme
-/// Solusi untuk memastikan semua background elements terupdate saat theme switch
 class ThemeableContainer extends ConsumerWidget {
   final Widget child;
   final EdgeInsetsGeometry padding;
@@ -33,13 +33,13 @@ class ThemeableContainer extends ConsumerWidget {
     final bgColor = theme.scaffoldBackgroundColor;
     final surface = theme.colorScheme.surface;
 
-    return Container(
+    Widget content = Container(
       padding: padding,
       margin: margin,
       width: width,
       height: height,
       decoration: BoxDecoration(
-        color: useGradient ? null : bgColor,
+        color: useGradient || themeMode == AppThemeMode.rgb ? null : bgColor,
         gradient: useGradient 
           ? _buildGradient(themeMode, bgColor, surface)
           : null,
@@ -47,6 +47,12 @@ class ThemeableContainer extends ConsumerWidget {
       ),
       child: child,
     );
+
+    if (themeMode == AppThemeMode.rgb) {
+      return RGBAnimatedBackground(child: content);
+    }
+
+    return content;
   }
 
   LinearGradient _buildGradient(

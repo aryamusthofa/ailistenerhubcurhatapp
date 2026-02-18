@@ -1,111 +1,141 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../domain/entities/ai_vibe.dart';
 import '../providers/mood_provider.dart';
-import '../providers/user_provider.dart';
 import 'premium_overlay.dart';
+
+enum VibeMode {
+  empathetic,
+  logical,
+  listener,
+  humorous,
+}
 
 class MoodSelector extends ConsumerWidget {
   const MoodSelector({super.key});
 
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final currentVibe = ref.watch(vibeProvider);
-    final userState = ref.watch(userProvider);
-    final isPremium = userState.asData?.value.isPremium ?? false;
-
-    final vibes = [
-      {'data': AiVibe.empathetic, 'label': 'Empathetic', 'icon': Icons.favorite_outline, 'isPremium': false},
-      {'data': AiVibe.logical, 'label': 'Logical', 'icon': Icons.lightbulb_outline, 'isPremium': false},
-      {'data': AiVibe.justListen, 'label': 'Listener', 'icon': Icons.hearing, 'isPremium': false},
-      // New Premium Option
-      {'data': AiVibe.logical, 'label': 'Sr. Counselor', 'icon': Icons.workspace_premium, 'isPremium': true}, 
-    ];
-
-    return SizedBox(
-      height: 60,
-      child: ListView.separated(
-        scrollDirection: Axis.horizontal,
-        itemCount: vibes.length,
-        separatorBuilder: (context, index) => const SizedBox(width: 12),
-        itemBuilder: (context, index) {
-          final vibe = vibes[index];
-          final vibeEnum = vibe['data'] as AiVibe;
-          // Verify if this is the Sr. Counselor item to distinguish highlighting
-          final isSrCounselor = vibe['label'] == 'Sr. Counselor';
-          
-          final isSelected = currentVibe == vibeEnum && !isSrCounselor; 
-          // Note: If user selects "Sr. Counselor", we map it to Logical (per hack). 
-          // So "Logical" pill might also highlight. 
-          // For now, let's keep simple logic: if vibeEnum matches, it highlights.
-          // But to avoid double highlight if we use same Enum, we add check.
-          
-          final isLocked = (vibe['isPremium'] as bool) && !isPremium;
-          final color = isSelected ? Theme.of(context).primaryColor : Colors.grey;
-
-          return GestureDetector(
-            onTap: () {
-              if (isLocked) {
-                _showPremiumDialog(context, ref);
-              } else {
-                ref.read(vibeProvider.notifier).state = vibeEnum;
-              }
-            },
-            child: AnimatedContainer(
-              duration: const Duration(milliseconds: 200),
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              decoration: BoxDecoration(
-                color: isSelected ? Theme.of(context).primaryColor : Theme.of(context).cardColor,
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(
-                  color: isSelected ? Colors.transparent : color.withValues(alpha: 0.5),
-                  width: 1.5,
-                ),
-                boxShadow: isSelected ? [
-                  BoxShadow(
-                    color: Theme.of(context).primaryColor.withValues(alpha: 0.3),
-                    blurRadius: 8,
-                    offset: const Offset(0, 4),
-                  )
-                ] : [],
-              ),
-              child: Row(
-                children: [
-                  Icon(
-                    isLocked ? Icons.lock : vibe['icon'] as IconData,
-                    size: 18,
-                    color: isSelected ? Colors.white : color,
-                  ),
-                  const SizedBox(width: 8),
-                  Text(
-                    vibe['label'] as String,
-                    style: TextStyle(
-                      color: isSelected ? Colors.white : color,
-                      fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        },
-      ),
-    );
+  void _onMoodSelected(BuildContext context, WidgetRef ref, VibeMode mode) {
+    // Logic for premium check if needed
+    ref.read(moodProvider.notifier).setMood(mode);
   }
 
-  void _showPremiumDialog(BuildContext context, WidgetRef ref) {
+  void _showPremiumOverlay(BuildContext context) {
     showDialog(
       context: context,
       barrierColor: Colors.transparent, // Let overlay handle blur
-      builder: (context) => PremiumOverlay(
-        message: 'Upgrade untuk mengakses Vibe Senior Counselor!',
-        onUpgrade: () {
-          ref.read(userProvider.notifier).upgradeToPremium();
-          Navigator.pop(context);
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Selamat! Anda sekarang Premium user.')),
-          );
-        },
+      builder: (context) => const PremiumOverlay(),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final currentMood = ref.watch(moodProvider);
+
+    return SizedBox(
+      height: 100,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        children: [
+          _MoodCard(
+            title: 'Empathetic',
+            icon: Icons.favorite,
+            isSelected: currentMood == VibeMode.empathetic,
+            onTap: () => _onMoodSelected(context, ref, VibeMode.empathetic),
+          ),
+          _MoodCard(
+            title: 'Logical',
+            icon: Icons.lightbulb,
+            isSelected: currentMood == VibeMode.logical,
+            onTap: () => _onMoodSelected(context, ref, VibeMode.logical),
+          ),
+          _MoodCard(
+            title: 'Just Listen',
+            icon: Icons.hearing,
+            isSelected: currentMood == VibeMode.listener,
+            onTap: () => _onMoodSelected(context, ref, VibeMode.listener),
+          ),
+           _MoodCard(
+            title: 'Humorous',
+            icon: Icons.sentiment_very_satisfied,
+            isSelected: currentMood == VibeMode.humorous,
+            isPremium: true,
+            onTap: () => _showPremiumOverlay(context),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _MoodCard extends StatelessWidget {
+  final String title;
+  final IconData icon;
+  final bool isSelected;
+  final VoidCallback onTap;
+  final bool isPremium;
+
+  const _MoodCard({
+    required this.title,
+    required this.icon,
+    required this.isSelected,
+    required this.onTap,
+    this.isPremium = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 80,
+        margin: const EdgeInsets.only(right: 12),
+        decoration: BoxDecoration(
+          color: isSelected
+              ? theme.colorScheme.primaryContainer
+              : theme.cardColor,
+          borderRadius: BorderRadius.circular(16),
+          border: isSelected
+              ? Border.all(color: theme.colorScheme.primary, width: 2)
+              : null,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.05),
+              blurRadius: 4,
+              offset: const Offset(0, 2),
+            ),
+          ],
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (isPremium)
+              const Align(
+                alignment: Alignment.topRight,
+                child: Padding(
+                  padding: EdgeInsets.all(4.0),
+                  child: Icon(Icons.lock, size: 12, color: Colors.amber),
+                ),
+              ),
+            Icon(
+              icon,
+              color: isSelected
+                  ? theme.colorScheme.primary
+                  : theme.iconTheme.color?.withValues(alpha: 0.7),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              title,
+              style: theme.textTheme.labelSmall?.copyWith(
+                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                color: isSelected
+                    ? theme.colorScheme.primary
+                    : theme.textTheme.bodyMedium?.color,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
       ),
     );
   }

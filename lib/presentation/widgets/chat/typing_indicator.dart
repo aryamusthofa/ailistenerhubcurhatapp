@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -24,7 +23,7 @@ class TypingIndicator extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            _Dot(),
+            _Dot(delay: 0.ms),
             const SizedBox(width: 4),
             _Dot(delay: 200.ms),
             const SizedBox(width: 4),
@@ -39,19 +38,20 @@ class TypingIndicator extends StatelessWidget {
 class _Dot extends StatelessWidget {
   final Duration delay;
 
-  const _Dot({this.delay = Duration.zero});
+  const _Dot({required this.delay});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 6,
-      height: 6,
+      width: 8,
+      height: 8,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.5),
         shape: BoxShape.circle,
       ),
-    ).animate(onPlay: (controller) => controller.repeat(reverse: true))
-     .scale(duration: 600.ms, delay: delay, begin: const Offset(0.8, 0.8), end: const Offset(1.2, 1.2))
-     .fade(duration: 600.ms, delay: delay, begin: 0.5, end: 1.0);
+    )
+    .animate(onPlay: (controller) => controller.repeat(reverse: true))
+    .scale(duration: 600.ms, delay: delay, begin: const Offset(0.8, 0.8), end: const Offset(1.2, 1.2))
+    .fade(duration: 600.ms, delay: delay, begin: 0.5, end: 1.0);
   }
 }

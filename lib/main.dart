@@ -11,7 +11,7 @@ import 'presentation/navigation/app_router.dart';
 import 'presentation/providers/di_providers.dart';
 import 'presentation/providers/theme/theme_provider.dart';
 import 'presentation/providers/security_provider.dart';
-import 'presentation/providers/auth/auth_provider.dart';
+
 import 'presentation/providers/language/language_provider.dart';
 import 'presentation/screens/auth/biometric_gate.dart';
 
@@ -34,11 +34,23 @@ Future<void> main() async {
   // Initialize SharedPreferences
   final sharedPreferences = await SharedPreferences.getInstance();
 
+  // Create ProviderContainer to initialize services before running app
+  final container = ProviderContainer(
+    overrides: [
+      sharedPreferencesProvider.overrideWithValue(sharedPreferences),
+    ],
+  );
+
+  // Initialize Hive
+  try {
+    await container.read(hiveServiceProvider).init();
+  } catch (e) {
+    debugPrint('Hive initialization error: $e');
+  }
+
   runApp(
-    ProviderScope(
-      overrides: [
-        sharedPreferencesProvider.overrideWithValue(sharedPreferences),
-      ],
+    UncontrolledProviderScope(
+      container: container,
       child: const AICurhatApp(),
     ),
   );
@@ -52,9 +64,9 @@ class AICurhatApp extends ConsumerWidget {
     // Watch the theme provider
     final appThemeMode = ref.watch(themeProvider);
     final appLocale = ref.watch(languageProvider);
+    final router = ref.watch(routerProvider);
     
-    // Initialize auth state saat app start
-    ref.watch(authProvider.notifier).checkAuthState();
+    // Initialize auth state implicitly via router redirect logic
 
     return MaterialApp.router(
       title: 'AI Listener Hub',
@@ -62,7 +74,7 @@ class AICurhatApp extends ConsumerWidget {
       theme: AppTheme.getThemeData(appThemeMode),
       darkTheme: AppTheme.getThemeData(appThemeMode),
       themeMode: AppTheme.getThemeMode(appThemeMode),
-      routerConfig: createAppRouter(ref),
+      routerConfig: router,
       locale: appLocale,
       supportedLocales: const [
         Locale('en', ''),
