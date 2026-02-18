@@ -20,6 +20,8 @@ Aplikasi curhat cerdas berbasis AI yang dirancang untuk menjadi "Invincible" (Ny
 - **Multi-Key Support**: Semua provider mendukung rotasi kunci API otomatis untuk menghindari rate limit.
 - **Privacy First**: Chat history disimpan secara lokal (Hive). *Enkripsi sedang dalam pengembangan.*
 - **Modern UI**: Desain Glassmorphism yang menenangkan.
+ - **Privacy First**: Chat history disimpan secara lokal (Hive) dan dienkripsi (AES-256) — Zero-knowledge & Ephemeral by design.
+ - **Modern UI**: Desain Glassmorphism yang menenangkan.
 
 ---
 
@@ -31,6 +33,21 @@ Semua dokumentasi teknis dan panduan pengerjaan ada di folder `PANDUAN/`:
     - Status proyek saat ini, log pengerjaan harian, dan roadmap fase selanjutnya.
 2.  **[Struktur Project & Arsitektur](PANDUAN/StrukturProject-AiCurhatApp.md)**
     - Penjelasan detail tentang struktur folder Clean Architecture, cara kerja sistem AI, dan konfigurasi environment.
+
+---
+
+## 📝 Rekap & Status Terbaru
+
+Lihat `REKAP_LENGKAP_PROJECT.md` untuk ringkasan status proyek terkini (Firebase setup, MCP activation, daftar API keys, dan langkah selanjutnya):
+
+- `REKAP_LENGKAP_PROJECT.md` (root) — dokumentasi rekap yang baru saja diperbarui pada Feb 18, 2026.
+
+Proyek sudah dikonfigurasi dengan Firebase (Android & iOS) dan tool MCP (GitHub Copilot MCP via Docker in WSL). Untuk tes cepat, jalankan aplikasi di web:
+
+```bash
+flutter pub get
+flutter run -d chrome
+```
 
 ---
 

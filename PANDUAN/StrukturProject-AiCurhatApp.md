@@ -98,3 +98,31 @@ Key yang didukung (Format List CSV):
     flutter pub get
     flutter run
     ```
+---
+
+## 🔁 Perubahan Terbaru (Ringkasan dari Repo saat ini)
+
+Dokumentasi struktur di atas masih valid secara konseptual (Clean Architecture: core/data/domain/presentation). Namun ada beberapa perubahan implementasi dan file baru sejak dokumen ini dibuat. Ringkasan perubahan penting:
+
+- File/Folder baru atau yang ditambahkan ke repo:
+  - `lib/firebase_options.dart` (auto-generated oleh `flutterfire configure`)
+  - `firebase.json` dan `android/app/google-services.json` (Firebase setup)
+  - `REKAP_LENGKAP_PROJECT.md` (rekap lengkap & status terbaru)
+  - `test_env.dart` (script kecil untuk verifikasi .env)
+  - `lib/presentation/providers/personalization_provider.dart`
+  - New auth screens under `lib/presentation/screens/auth/` (login, register, welcome)
+  - `lib/presentation/widgets/fx/rgb_animated_background.dart`
+  - Generated model: `lib/data/models/conversation_model.g.dart`
+
+- File/Folder yang dihapus atau digantikan:
+  - `lib/presentation/screens/login_screen.dart`, `register_screen.dart`, `welcome_screen.dart` — dipindah/di-refactor ke `lib/presentation/screens/auth/`
+  - `lib/presentation/providers/auth/auth_notifier.dart` — di-refactor/diintegrasikan ke provider lain
+
+- Perubahan fungsi/implementasi signifikan:
+  - `lib/data/datasources/remote/ai_remote_service.dart` diperbarui sebagai AI orchestrator (fallback & multi-key rotation).
+  - `lib/core/security/encryption_service.dart` dan `screen_shield.dart` dikembangkan untuk enkripsi AES + screen protection.
+  - `lib/presentation/providers/*` (chat, security, theme, di_providers) diperbarui untuk mendukung Firebase, Hive, dan dependency injection.
+  - `lib/main.dart` sekarang menginisialisasi `dotenv`, `Firebase`, `Hive` dan `ProviderContainer`.
+
+Untuk detail lengkap perubahan dan status eksekusi lihat: `REKAP_LENGKAP_PROJECT.md` (root project).
+
